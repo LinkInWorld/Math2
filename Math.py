@@ -1,3 +1,11 @@
+# импортируем библиотеку streamlit
 import streamlit as st
-x = st.slider('x')
-st.write(x, 'squared is', x * x)
+
+# Запрос числа у пользователя
+number = st.slider('x')
+
+# Вычисление квадрата числа
+square = number * number
+
+# Вывод результата
+st.write('Квадрат числа ', number, ' равен ', square)
